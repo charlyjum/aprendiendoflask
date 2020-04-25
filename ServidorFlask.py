@@ -10,7 +10,7 @@ def index():
 
 @app.route('/hello') #Use el decorador route para vincular una función a una URL
 def hello():
-    return render_template('hello.html')
+    return render_template('hello.html', name="Carlos")
 
 #Una aplicacion web siempre debe de estar escuchando peticiones, se hace asi
 if __name__ == '__main__': #se hace una validacion para comprobar si
