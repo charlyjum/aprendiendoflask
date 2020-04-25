@@ -16,6 +16,5 @@ def hello():
 if __name__ == '__main__': #se hace una validacion para comprobar si
                            #se esta en el archivo principal para ver si es el
                            #archivo de ejecucion y no un modulo
-    app.run(host="127.168.0.1", port=9566)
-                        #indica que la aplicacion estara en prueba y requiero que se
-                        #reinicie cada vez que modifique algo.
+    app.run(host="0.0.0.0", port=9566) 
+                        #0.0.0.0 la hago visible en mi lan y el puerto asignado
